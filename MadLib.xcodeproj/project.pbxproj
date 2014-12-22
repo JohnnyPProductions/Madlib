@@ -14,6 +14,10 @@
 		A7BF5F861A47BAF700F43126 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7BF5F851A47BAF700F43126 /* Images.xcassets */; };
 		A7BF5F891A47BAF700F43126 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7BF5F871A47BAF700F43126 /* LaunchScreen.xib */; };
 		A7BF5F951A47BAF700F43126 /* MadLibTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A7BF5F941A47BAF700F43126 /* MadLibTests.m */; };
+		A7BF5FA01A47BE9200F43126 /* VerbViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7BF5F9F1A47BE9200F43126 /* VerbViewController.m */; };
+		A7BF5FA31A47C12A00F43126 /* NounViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7BF5FA21A47C12A00F43126 /* NounViewController.m */; };
+		A7BF5FA61A47C2B600F43126 /* NameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7BF5FA51A47C2B600F43126 /* NameViewController.m */; };
+		A7BF5FA91A47C42400F43126 /* FinishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7BF5FA81A47C42400F43126 /* FinishViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,14 @@
 		A7BF5F8E1A47BAF700F43126 /* MadLibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MadLibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7BF5F931A47BAF700F43126 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7BF5F941A47BAF700F43126 /* MadLibTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MadLibTests.m; sourceTree = "<group>"; };
+		A7BF5F9E1A47BE9200F43126 /* VerbViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerbViewController.h; sourceTree = "<group>"; };
+		A7BF5F9F1A47BE9200F43126 /* VerbViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerbViewController.m; sourceTree = "<group>"; };
+		A7BF5FA11A47C12A00F43126 /* NounViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NounViewController.h; sourceTree = "<group>"; };
+		A7BF5FA21A47C12A00F43126 /* NounViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NounViewController.m; sourceTree = "<group>"; };
+		A7BF5FA41A47C2B600F43126 /* NameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NameViewController.h; sourceTree = "<group>"; };
+		A7BF5FA51A47C2B600F43126 /* NameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NameViewController.m; sourceTree = "<group>"; };
+		A7BF5FA71A47C42400F43126 /* FinishViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FinishViewController.h; sourceTree = "<group>"; };
+		A7BF5FA81A47C42400F43126 /* FinishViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FinishViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,11 +93,19 @@
 		A7BF5F771A47BAF600F43126 /* MadLib */ = {
 			isa = PBXGroup;
 			children = (
+				A7BF5F821A47BAF700F43126 /* Main.storyboard */,
 				A7BF5F7C1A47BAF700F43126 /* AppDelegate.h */,
 				A7BF5F7D1A47BAF700F43126 /* AppDelegate.m */,
 				A7BF5F7F1A47BAF700F43126 /* ViewController.h */,
 				A7BF5F801A47BAF700F43126 /* ViewController.m */,
-				A7BF5F821A47BAF700F43126 /* Main.storyboard */,
+				A7BF5F9E1A47BE9200F43126 /* VerbViewController.h */,
+				A7BF5F9F1A47BE9200F43126 /* VerbViewController.m */,
+				A7BF5FA11A47C12A00F43126 /* NounViewController.h */,
+				A7BF5FA21A47C12A00F43126 /* NounViewController.m */,
+				A7BF5FA41A47C2B600F43126 /* NameViewController.h */,
+				A7BF5FA51A47C2B600F43126 /* NameViewController.m */,
+				A7BF5FA71A47C42400F43126 /* FinishViewController.h */,
+				A7BF5FA81A47C42400F43126 /* FinishViewController.m */,
 				A7BF5F851A47BAF700F43126 /* Images.xcassets */,
 				A7BF5F871A47BAF700F43126 /* LaunchScreen.xib */,
 				A7BF5F781A47BAF600F43126 /* Supporting Files */,
@@ -168,9 +188,11 @@
 				TargetAttributes = {
 					A7BF5F741A47BAF600F43126 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 44HU2DJ4AL;
 					};
 					A7BF5F8D1A47BAF700F43126 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 44HU2DJ4AL;
 						TestTargetID = A7BF5F741A47BAF600F43126;
 					};
 				};
@@ -220,8 +242,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7BF5F811A47BAF700F43126 /* ViewController.m in Sources */,
+				A7BF5FA31A47C12A00F43126 /* NounViewController.m in Sources */,
+				A7BF5FA91A47C42400F43126 /* FinishViewController.m in Sources */,
+				A7BF5FA01A47BE9200F43126 /* VerbViewController.m in Sources */,
 				A7BF5F7E1A47BAF700F43126 /* AppDelegate.m in Sources */,
 				A7BF5F7B1A47BAF700F43126 /* main.m in Sources */,
+				A7BF5FA61A47C2B600F43126 /* NameViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,6 +391,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -376,6 +404,7 @@
 				INFOPLIST_FILE = MadLibTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MadLib.app/MadLib";
 			};
 			name = Debug;
@@ -384,6 +413,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -391,6 +422,7 @@
 				INFOPLIST_FILE = MadLibTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MadLib.app/MadLib";
 			};
 			name = Release;
