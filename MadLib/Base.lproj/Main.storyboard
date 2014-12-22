@@ -185,6 +185,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="nounButton" destination="itx-Fk-ayo" id="Vg4-qg-bDA"/>
                         <outlet property="nounTextField" destination="Q47-Ng-ZGC" id="BwU-9Z-cEd"/>
                     </connections>
                 </viewController>
@@ -275,6 +276,9 @@
                             <constraint firstAttribute="centerX" secondItem="VOf-HX-giZ" secondAttribute="centerX" id="gW5-Y8-r5b"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="nameTextField" destination="Gfd-Ju-85h" id="EhU-EH-vQk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f5J-39-gbS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

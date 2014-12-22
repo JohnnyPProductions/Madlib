@@ -446,6 +446,7 @@
 				A7BF5F9A1A47BAF700F43126 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A7BF5F9B1A47BAF700F43126 /* Build configuration list for PBXNativeTarget "MadLibTests" */ = {
 			isa = XCConfigurationList;
@@ -454,6 +455,7 @@
 				A7BF5F9D1A47BAF700F43126 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

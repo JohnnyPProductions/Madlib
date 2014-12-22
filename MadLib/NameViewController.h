@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface NameViewController : UIViewController
-
+@property NSString *noun;
 @end
