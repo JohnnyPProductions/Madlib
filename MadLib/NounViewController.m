@@ -8,6 +8,7 @@
 
 #import "NounViewController.h"
 #import "NameViewController.h"
+#import "VerbViewController.h"
 
 @interface NounViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *nounTextField;
@@ -19,13 +20,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.nounTextField.text = self.verb;
+    
   
 }
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     NameViewController *nameViewController = segue.destinationViewController;
     nameViewController.noun = self.nounTextField.text;
+    nameViewController.verb = self.verb;
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{

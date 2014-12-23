@@ -10,4 +10,5 @@
 
 @interface NameViewController : UIViewController
 @property NSString *noun;
+@property NSString *verb;
 @end

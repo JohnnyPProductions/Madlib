@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface FinishViewController : UIViewController
-
+@property NSString *name;
+@property NSString *noun;
+@property NSString *verb;
 @end

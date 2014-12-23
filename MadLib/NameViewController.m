@@ -8,6 +8,9 @@
 
 #import "NameViewController.h"
 #import "FinishViewController.h"
+#import "NounViewController.h"
+#import "VerbViewController.h"
+
 @interface NameViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *nameTextField;
 
@@ -17,13 +20,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.nameTextField.text = self.noun;}
+    }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
 }
-
-
-
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    FinishViewController *finishViewController = segue.destinationViewController;
+    finishViewController.name = self.nameTextField.text;
+    finishViewController.noun = self.noun;
+    finishViewController.verb = self.verb;
+    
+}
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [self.view endEditing:YES];// this will do the trick
+}
 @end
